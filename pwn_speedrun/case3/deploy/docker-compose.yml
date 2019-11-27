@@ -1,0 +1,17 @@
+version: '2.3'
+
+services:
+
+  task:
+    container_name: pwn_speedrun_case3
+    image: pwn_speedrun_case3_img
+
+    build: service
+    restart: always
+    ports:
+      - 33047:31337
+    pids_limit: 512
+    mem_limit: 128M
+    privileged: true
+    volumes:
+      - ./service/nsjail/logs/:/var/log/nsjail/
