@@ -8,7 +8,9 @@
 > 
 > `nc <ip> 33047`
 >
-> `flag in /tmp/flag.txt`
+> `flag form: Cup\{[0-9a-f]{16}\}`
+>
+>
 
 ## Запуск
 
@@ -37,4 +39,4 @@ ELF 64bit, C, no strip, no pack
 
 ## Флаг
 
-`Cup{be6b4065d4c73ff1ec819c63d442f8c6245315b7fef8a4bd28077cb55d05ccd7}`
+`Cup{1b872c614916e6b5}`
