@@ -1,0 +1,23 @@
+version: '2.2'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/frontend
+    ports:
+      - 1338:1338
+    restart: on-failure
+    pids_limit: 256
+    mem_limit: 500M
+
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/backend
+    ports:
+      - 1337:1337
+    restart: on-failure
+    pids_limit: 256
+    mem_limit: 500M
